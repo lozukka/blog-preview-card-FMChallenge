@@ -1,0 +1,135 @@
+@import url('/css/fonts.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Figtree', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+:root {
+--color-yellow: hsl(47, 88%, 63%);
+--color-white: hsl(0, 0%, 100%);
+--color-gray-500: hsl(0, 0%, 42%);
+--color-gray-950: hsl(0, 0%, 7%);
+}
+
+body {
+    background-color: var(--color-yellow);
+}
+
+.wrapper {
+    margin-left: 24px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    width: 327px;
+    height: auto;
+    border-radius: 20px;
+    border: 1px solid var(--color-gray-950);
+    box-shadow: 8px 8px 0px 0px var(--color-gray-950);
+    margin-inline: auto;
+    margin-top: 156px;
+}
+
+.card .card__image {
+    width: 279px;
+    height: auto;
+    border-radius: 10px;
+    align-self: center;
+    margin-inline: 24px;
+    margin-top: 24px;
+}
+
+.card .category {
+    background-color: var(--color-yellow);
+    color: var(--color-gray-950);
+    font-weight: 800;
+    font-size: 12px;
+    padding: 4px 12px;
+    width: 73px;
+    border-radius: 4px;
+    margin-top: 24px;
+}
+
+.card .date {
+    color: var(--color-gray-950);
+    font-size: 12px;
+    margin-block: 12px;
+}
+
+.card .title a {
+    text-decoration: none;
+    color: var(--color-gray-950);
+    font-weight: 800;
+    font-size: 20px;
+    transition: color 150ms ease-in-out;
+}
+
+.card .title a:hover {
+    color: var(--color-yellow);
+}
+
+.card .text {
+    color: var(--color-gray-500);
+    font-size: 14px;
+    margin-block: 12px;  
+}
+
+.card .author {
+    display: flex;
+    align-items: center;
+}
+
+.card .author .author__image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-block: 24px;
+    margin-right: 12px;
+}
+
+.card .author .author__name {
+    color: var(--color-gray-950);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.attribution {
+    color: var(--color-gray-500);
+    font-size: 12px;
+    margin-block: 24px;
+    margin-inline: 24px;
+    text-align: center;
+}
+
+@media (min-width: 1440px) {
+    .card {
+        width: 384px;
+    }
+    .card .card__image {
+        width: auto;
+        height: 200px;
+    }
+    .card .text {
+        font-size: 16px; 
+    }
+    .card .title a {
+        font-size: 24px;
+    }
+    .card .date {
+        font-size: 14px;
+    }
+    .card .category {
+        font-size: 14px;
+        width: 82px;
+    }
+}
+/*- Mobile: 375px
+- Desktop: 1440px*/
